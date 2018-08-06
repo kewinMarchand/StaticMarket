@@ -4,8 +4,8 @@
   </a>
   <div class="card-body">
     <h5 class="card-title">{{ product.name }}</h5>
-    <p class="card-text">{{ product.sku }}</p>
-    <button class="btn btn-sm btn-primary snipcart-add-item d-block ml-auto"
+    <p class="card-text mb-2">{{ product.excerpt  | remove: '<p>' | remove: '</p>' }}</p>
+    <button class="snipcart-add-item btn btn-sm btn-primary d-block ml-auto"
       data-item-name="{{ product.title }}"
       data-item-id="{{ product.sku }}"
       data-item-image="{{ product.image }}"
