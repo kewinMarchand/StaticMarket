@@ -40,5 +40,5 @@ plugins:
 #   - vendor/ruby/
 
 collections:
-  - products:
+  products:
     output: true
