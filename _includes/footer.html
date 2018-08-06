@@ -1,0 +1,30 @@
+<footer class="footer container-fluid bg-dark">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+    <h2 class="footer-heading text-center text-white pt-2">{{ site.title | escape }}</h2>
+    <div class="footer-wrapper row">
+      <div class="footer-col col col-md-12 text-center">
+        <ul class="list-unstyled">
+          <li class="p-name">
+            {%- if site.author -%}
+              {{ site.author | escape }}
+            {%- endif -%}
+            </li>
+            {%- if site.email -%}
+              <li>
+                <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
+              </li>
+            {%- endif -%}
+        </ul>
+      </div>
+
+      <div class="footer-col col col-md-12 text-center">
+        {%- include social.html -%}
+      </div>
+
+      <div class="footer-col col col-md-12 text-center text-white">
+        <p>{{- site.description | escape -}}</p>
+      </div>
+
+    </div>
+
+</footer>

@@ -1,0 +1,17 @@
+<div class="product card col-md-6"> 
+  <a class="product" href="{{ site.baseurl }}{{ product.url }}">
+    <img class="card-img-top" src="{{ product.image }}" alt="{{ product.title }}"/>
+  </a>
+  <div class="card-body">
+    <h5 class="card-title">{{ product.name }}</h5>
+    <p class="card-text">{{ product.sku }}</p>
+    <button class="btn btn-sm btn-primary snipcart-add-item d-block ml-auto"
+      data-item-name="{{ product.title }}"
+      data-item-id="{{ product.sku }}"
+      data-item-image="{{ product.image }}"
+      data-item-url="{{ site.baseurl }}"
+      data-item-price="{{ product.price }}">
+      Acheter {{ product.price }} $
+    </button>
+  </div>
+</div>
